@@ -11,6 +11,39 @@
     <title> Anju - Exploring Advanced CSS features</title>
 </head>
   <body>
+
+  <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi_toggle">
+      <div class="navigation__background">
+        &nbsp;
+      </div>
+      <label for="navi_toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About Me</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Vitalities</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Personal Qualitites</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">My Passion</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Work Done</a>
+          </li>
+          <li class="navigation__item">
+              <a href="#" class="navigation__link">Contact Me</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
     <header class="header">
       <div class="logo-box"><img src="img/logo.png" alt="logo" class="logo"></div>
       <div class="center-box">
@@ -24,12 +57,12 @@
 
     <main>
         <section class="section-cards" id="section-cards">
-          <div class="u-centered-text u-margin-bottom-small .u-margin-top-big">
+          <div class="u-centered-text u-margin-bottom-big">
             <h2 class="heading-secondary">
               Vitalities
             </h2>
           </div>
-          <div class="row-cards">
+          <div class="row">
   
             <div class="col-1-of-3">
               <div class="card">
@@ -53,12 +86,15 @@
                   <div class="card_side card_side_back card_side_back_1">
                     <div class="card_cta">
                       <p class="card_side_back_details">I have good understanding of latest web technologies. I have a lot of experience in working on client side of huge web applications. Lots of hands on on html, css, javascript and rest apis.</p>
+                        <div class="u-margin-top-medium">  
+                          <a href="#popup" class="btn btn-white btn-animated">Details</a>
+                        </div>
                     </div>
                   </div>
               </div>
             </div>
   
-            <div class="col-2-of-3">
+            <div class="col-1-of-3">
               <div class="card">
                 <div class="card_side card_side_front">
                   <div class="card_picture card_picture_2">
@@ -80,12 +116,15 @@
                 <div class="card_side card_side_back card_side_back_2">
                     <div class="card_cta">
                       <p class="card_side_back_details">I have 8 years experience of working in IBM Software Labs. I developed Web Audio Video widget for audio and video conferencing. Some experience in Testing, Automation and Quality assurance too.</p>
+                      <div class="u-margin-top-medium">  
+                        <a href="#popup" class="btn btn-white btn-animated">Details</a>
+                      </div>
                     </div>
                   </div>
               </div>
             </div>
   
-            <div class="col-3-of-3">
+            <div class="col-1-of-3">
               <div class="card">
                 <div class="card_side card_side_front">
                   <div class="card_picture card_picture_3">
@@ -105,6 +144,9 @@
                 <div class="card_side card_side_back card_side_back_3">
                     <div class="card_cta">
                       <p class="card_side_back_details">I am a Masteres in Computer Applications. I did my Bachelors in Commerce. Also, I am a Sun certified Java programmer.</p>
+                      <div class="u-margin-top-medium">  
+                        <a href="#popup" class="btn btn-white btn-animated">Details</a>
+                      </div>
                     </div>
                   </div>
               </div>
@@ -124,7 +166,7 @@
             Personal Qualities
           </h2>
         </div>
-        <div class="row-features">
+        <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
               <img src="img/icons/earth.png" alt="" class="feature-box-icon">        
@@ -132,21 +174,21 @@
               <p class="feature-box-text">this is a sample text kadjkasdjslfjihnknk</p>
             </div>
           </div>
-          <div class="col-2-of-4">
+          <div class="col-1-of-4">
             <div class="feature-box">
               <img src="img/icons/love.png" alt="" class="feature-box-icon">        
               <h3 class="heading-tertiary u-margin-bottom-small">Acquired Taste</h3>
               <p class="feature-box-text">this is a sample text kadjkasdjslfjihnknk</p>
             </div>
           </div>
-          <div class="col-3-of-4">
+          <div class="col-1-of-4">
             <div class="feature-box">
               <img src="img/icons/sun.png" alt="" class="feature-box-icon">        
               <h3 class="heading-tertiary u-margin-botton-small">Adaptable</h3>
               <p class="feature-box-text">this is a sample text kadjkasdjslfjihnknk</p>
             </div>
           </div>
-          <div class="col-4-of-4">
+          <div class="col-1-of-4">
             <div class="feature-box">
               <img src="img/icons/plant.png" alt="" class="feature-box-icon">        
               <h3 class="heading-tertiary u-margin-botton-small">Thinks Different</h3>
@@ -187,7 +229,7 @@
             </p>
 
           </div>
-          <div class="col-2-of-2">
+          <div class="col-1-of-2">
             <div class="composition">
               <img src="img/1background.jpg" alt="img1" class="composition_photo composition_photo--p1">
               <img src="img/2background.jpg" alt="img2" class="composition_photo composition_photo--p2">
@@ -201,5 +243,20 @@
 
       
     </main>
+    <div class="popup" id="popup">
+      <div class="popup_content">
+        <div class="popup_left">
+          <img src="img/icons/sun.png" alt="photo1" class="popup_img">
+          <img src="img/icons/plant.png" alt="photo2" class="popup_img">
+        </div>
+        <div class="popup_right">
+          <a href="#section-cards" class="popup_close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start now....</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important thing to note is the ndlscsdklchjdskfjgdskvdsvhj</h3>
+          <p class="popup_text u-margin-bottom-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet placeat sint pariatur, ab laudantium molestias esse sequi atque dicta. Illum placeat quidem magnam explicabo ab error animi aut qui harum.</p>
+          <a href="" class="btn btn-brown">Done...</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>    
