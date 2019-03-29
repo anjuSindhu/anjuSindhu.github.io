@@ -195,7 +195,7 @@ body {
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .u-margin-bottom-medium {
@@ -398,12 +398,12 @@ body {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 2.5rem 1rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
-  height: 30rem;
+  height: 34rem;
 }
 @media (max-width: 56.25em) {
   .feature-box {
@@ -413,7 +413,7 @@ body {
 .feature-box-icon {
   width: 5rem;
   height: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .feature-box:hover {
   transform: translateY(2%) scale(1.1);
@@ -687,6 +687,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -995,4 +996,5 @@ body {
     padding: 20rem 0;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
