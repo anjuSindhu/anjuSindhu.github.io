@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Description for your page. Shouldn't be longer then 200 characters -->
+    <meta name="description"
+  content="Learn everything you want to know about HTML5 in this video tutorial. Tags, content sections, embedding media, forms, canvas and more will be covered."/>
+    <!-- Keywords are used to define your content for search engines. Shouldn't be longer then 1,000 characters -->
+    <meta name="keywords"
+    content="html5 canvas,html5 tutorial,html5 tutorial, html5 doctype, html5 tags,html5 video,learn html5"/>
+    <meta name="robots" content="index,follow"/> 
+    <script src="javascript/randomcolorchange.js"> </script>
+    <script src="javascript/excanvas.js"></script>
+    <script src="javascript/webstore.js"></script>
+    <!-- References a icon (16 x 16) to associate with your page. Save it in the root directory for IE -->
+	  <link rel="icon" href="../img/logo.png"/>
+    <title>HTML5</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!--[if lt IE 9]>
+    <script>
+      document.createElement("article");
+      document.createElement("aside");
+      document.createElement("footer");
+      document.createElement("header");
+      document.createElement("main");
+      document.createElement("nav");
+      document.createElement("section");
+    </script>
+    <![endif]-->
+  </head>
+  <body class="html5_demo_main">
+    <header class="section-html5-main">
+      <div class="u-centered-text u-margin-bottom-medium">
+          <h2 class="heading-secondary">
+            HTML5 Tests
+          </h2>
+          <h3 class="u-margin-bottom-small" style="color:yellowgreen;">
+            New Tags and Features
+          </h3>
+      </div>
+    </header>
+    <nav class="nav_menu">
+      <ul>
+        <div class="row">
+          <div class="col-1-of-5">
+              <li class="nav_menu_item"><a href="javascript:showSection('demo1');" class="nav_menu_link">Demo 1</a></li>
+          </div>
+          <div class="col-1-of-5">
+              <li class="nav_menu_item"><a href="javascript:showSection('table');" class="nav_menu_link">Demo 2</a></li>
+          </div>
+          <div class="col-1-of-5">
+              <li class="nav_menu_item"><a href="javascript:showSection('form');" class="nav_menu_link">Demo 3</a></li>
+          </div>
+          <div class="col-1-of-5">
+              <li class="nav_menu_item"><a href="javascript:showSection('svg_section');" class="nav_menu_link">Demo 4</a></li>
+          </div>
+          <div class="col-1-of-5">
+              <li class="nav_menu_item"><a href="javascript:showSection('data_section');" class="nav_menu_link">Demo 5</a></li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <section class="main" id="main">
+      <div class="row">
+        <div class="col-2-of-3">
+          <h2 class="heading-secondary">Audio and Video Tags</h2>
+          <article>
+            <header>
+              <h3 class="heading-tertiary">Use of Audio</h3>
+              <p>(THE AXIOM Official Trailer, 2019)</p>
+            </header>
+            <audio controls>
+                <source src="media/THE AXIOM.mpg" type="audio/mpeg">
+                  <source src="media/THE AXIOM.ogg" type="audio/ogg">
+            </audio>
+          </article>
+
+          <article>
+            <header>
+              <h3 class="heading-tertiary">Use of Video</h3>
+              <p>(BEN 10 Official Traile , 2019)</p>
+            </header>
+            <video width="320" height="240" controls muted>
+              <source src="media/BEN 10 trailers.mp4" type="video/mp4">
+              <source src="media/movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </article>
+        
+
+       
+          <h2 class="heading-secondary">Other tags</h2>
+          <article>
+            <header>
+              <h3 class="heading-tertiary">This is a h3 in new article tag of html5</h3>
+            </header>
+            <p>It specifies independent, self-contained content. Eg: a post, news, comment</p>
+          </article>
+
+          <article>
+            <header>
+              <h3>We have used this two articles inside one section</h3>
+            </header>
+            <p> Section tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.</p>
+            </article>
+        </div>
+      
+        <div class="col-1-of-3">
+          <aside>
+            <h2 class="heading-secondary">Use of aside tag</h2>
+            <p>Defines some content aside from the content it is placed in. generally we place this content in sidebar.</p>
+          </aside>
+        </div>
+      </div>    
+    </section>
+
+    <section class="demo1" id="demo1">
+      <div class="row">
+        <div class="col-1-of-2">
+          <!-- Message that is displayed if the browser has JavaScript disabled -->
+          <noscript>Please Enable JavaScript</noscript>
+          
+          <!-- Increases the size of the text it contains h1 - h6
+          They are used to define the importance of elements in sequence -->
+          <h1 onclick="changeColor(event)">Change with a Click</h1>
+          
+          <!-- The <p> will add 2 line breaks after the </p> and <br> adds one -->
+          <p>
+          hr tag draws a horizontal line.
+          </p>
+          
+          <!-- Draws a line -->
+          <hr>
+          
+          <!-- <blockquote> indents the surrounding text and cite defines where the quote came from -->
+          <blockquote cite="http://epicquotes.org/view.php?id=151">
+          Never, under any circumstances, take a sleeping pill and a laxative on the same night.
+          </blockquote>
+          
+          <!-- <q> surrounds text with quotes -->
+          <q cite="http://www.brainyquote.com/quotes/quotes/h/hennyyoung128883.html">If at first you don’t succeed ... so much for skydiving.</q><br><br>
+          
+          <!-- <pre> preserves white space, but tabs can get messed up -->
+          <pre>
+                          _          _
+                        (.&lt;        &gt;.)
+                        \(_)________( \
+                        (___________)\\
+                            (     )     \
+                            |   |
+                            _|   |_
+                          (_______)
+          </pre>
+            
+          <!-- 4 ways to emphasize text without a line break -->
+          <b>Bold : Bold Font</b><br>
+          <strong>Strong : Strong Font</strong><br>
+          <em>Emphasis : Emphasised Font</em><br>
+          <i>Italic : Italic Font</i><br>
+          
+          <!-- 3 ways to format text for special purposes -->
+          <small>Small : Short Comment</small><br>
+          <ins>Insert : Added to Document</ins><br>
+          <del>Delete : Strike</del><br>
+          <samp>Sample Programming Output</samp><br><br>
+        </div>
+        <div class="col-1-of-2">
+          <!-- Use pre and code to surround code -->
+            <!-- var is used to emphasive important variables -->
+            <pre>
+              <code>
+                function init(){
+                  var <var>h1tags</var> = document.getElementsByTagName("h1");
+                  <var>h1tags[0]</var>.onclick = changeColor;
+                }
+              </code>
+            </pre>
+                <!-- Advisory tags -->
+          <!-- dfn adds emphasis to a word without title and a popup with title -->
+          <!-- kbd is used to emphasis input expected from a user -->
+          This is an abbreviation <abbr title="abbreviation">abbrv.</abbr><br>
+          <dfn>Definition: </dfn>the formal statement of the meaning or significance of a word<br>
+          <dfn title="the formal statement of the meaning or significance of a word">Definition</dfn><br>
+          <kbd>Enter something here</kbd>
+          
+          <!-- Character Entities : http://dev.w3.org/html5/html-author/charref -->
+          &cent;
+          &pound;
+          &yen;
+          &copy;
+          &reg;
+          &deg;
+          &frac14;
+          &frac12;
+          &frac34;
+          &sup2;<br>
+
+          <!-- Superscript / Subscript -->
+          4<sup>2</sup><br>
+          
+          CO<sub>2</sub><br>
+          
+          <!-- You can define the direction of text with rtl or ltr -->
+          <bdo dir="rtl">أين هو مطعم</bdo><br>
+          
+          <!-- You can provide ruby annotation for pronunciation -->
+          <ruby>飯店<rt>hanten</rt></ruby><br>
+          
+          <!-- HYPERLINKS -->
+          <!-- Contains the referenced link with an optional title -->
+          <!-- A hyperlink has 3 interactive states hover, active, visited -->
+          <!-- You can open the mail software to send a message -->
+          <a href="mailto:anju@gmail.com">Send an Email</a>
+          
+          <!-- You can define hot spot links in images with image maps. 
+          Import your image into Gimp and Filters → Web → ImageMap -->
+          <!--img src="http://localhost/html5/imagemap.png" alt="imagemap example" width="600" height="125" usemap="#map" />
+
+          <map name="map">
+          <area shape="circle" coords="57,62,39" alt="Yahoo" title="Go to Yahoo" href="http://yahoo.com" />
+          <area shape="poly" coords="192,20,166,45,232,105,301,42,272,20,192,19,195,20" alt="Diamonds" title="Go to Diamonds" href="http://diamonds.com" />
+          <area shape="rect" coords="332,8,595,115" alt="Google" title="Go to Google" href="http://google.com" />
+          </map-->
+          
+          <!-- You can embed numerous external file formats using the object tag -->
+          
+          <!-- Embed a PDF -->
+          <object data="media/HTML5.docx" type="application/msword" 
+            width="750" height="40">MS Word File
+          </object>
+          
+          <!-- Other Formats 
+          application/msword : MS Doc Files
+          application/x-java-applet : Java Applet
+          audio/mpeg : MP3s
+          image/png : PNGs
+          image/jpeg : JPEGs
+          image/gif : GIFS
+          image/svg+xml : SVG Vector images
+          text/plain : Text
+          video/mp4 : MP4s
+          video/x-msvideo : AVIs
+          video/x-msv-wmv : WMVs
+          video/quicktime : MOVs
+          -->
+                  <!-- You can embed externale resources in an iframe -->
+          <iframe width="560" height="215" src="http://www.youtube.com/embed/Rub-JsjMhWY" allowfullscreen=""></iframe>
+          
+          <!-- Interactive files like Flash files can be embedded with embed
+          You can define the file type, plugin and set other params -->
+          <!--embed src="http://www.itma.vt.edu/tech/flash.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="300" height="120" loop="false" quality="high"--> 
+
+        
+        <br><br><br>
+      </div>
+    </div>
+    </section>
+
+    <section class="table" id="table">
+        <div class="row">
+          <div class="col-1-of-2">
+              <article>
+                <h3 class="heading-tertiary">Creating a Table with HTML tags</h3>
+                <!-- Tables are surrounded with table tags -->
+                <table id="tableData">
+                <!-- caption can be used to define a table title -->
+                <caption>Baseball</caption>
+                  <!-- thead shows at the top of the table and must come before tbody -->
+                  <thead>
+                    <tr>
+                      <td colspan="4">Best Baseball Players</td>
+                    </tr>
+                  </thead>
+                  <!-- thead shows at the bottom of the table and must come before tbody -->
+                  <tfoot>
+                    <!-- You can define how many rows are taken up with colspan and you can take up multiple rows with rowspan -->
+                    <!-- tr defines the row and td each cell -->
+                    <tr><td colspan="4">* Hall of Fame</td></tr>
+                  </tfoot>
+                  <!-- The main data for the table goes between tbody if you use thead or tfoot -->
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>Average</td>
+                      <td>RBIs</td>
+                      <td>Homeruns</td>
+                    </tr>
+                    <tr>
+                      <td>Hank Aaron*</td>
+                      <td>.305</td>
+                      <td>2297</td>
+                      <td>755</td>
+                    </tr>
+                    <tr>
+                      <td>Babe Ruth*</td>
+                      <td>.342</td>
+                      <td>2214</td>
+                      <td>714</td>
+                    </tr>
+                    <tr>
+                      <td>Barry Bonds</td>
+                      <td>.298</td>
+                      <td>1996</td>
+                      <td>762</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </article>
+          </div>
+          <div class="col-1-of-2">
+            <h3>Types of Lists</h3>
+      
+            <!-- Unordered list -->
+            <ul id="uoListTypes">
+              <li>Unordered</li>
+              <li>Ordered</li>
+              <li>Definition</li>
+            </ul>
+            
+            <!-- Ordered list -->
+            <ol id="oListTypes">
+              <li>Harry Potter
+                <ol id="oListIndent">
+                  <li>and the Sorcerer's Stone</li>
+                  <li>and the Half-Blood Prince</li>
+                  <li>and the Chamber of Secrets</li>
+                  <li>Prisoner of Azkaban</li>
+                  <li>and the Goblet of Fire</li>
+                  <li>and the Order of the Phoenix</li>
+                  <li>and the Deathly Hallows</li>
+                </ol>
+                
+                <!-- To use lists in lists put the new ol between the top li -->
+                </li>
+              <li>The Very Hungry Caterpillar</li>
+            </ol>
+            
+            <!-- Definition list : Surrounded by <dl>, list item surrounded by <dt>, <dfn> defines it is a word being defined and <dd> surrounds the definition -->
+            <dl>
+            <dt><dfn>Definition</dfn></dt>
+            <dd>the act of making definite, distinct, or clear</dd>
+            </dl>
+          </div>    
+        </div>
+    </section>
+
+    <section class="form" id="form">
+        <h2 class="heading-secondary"> Form Submission </h2>
+        <!-- To send data to the server you need to surround your input with form tags. 
+        The GET method embeds the data in the URL
+        The POST method enclodes the data and transmits it in the HTTP message -->
+        <form class="formEle" method="GET" action="../server/phpscript.php">
+        
+          <!-- You can pass text where the name will be used as the key to get the passed value. You can mark as readonly and disabled -->
+          Your Name : <input type="text" name="name" size="50" maxlength="50"><br>
+          
+          <!-- You can have data hidden with password -->
+          Your Password : <input type="password" name="password"><br>
+          
+          <!-- A textarea is used for multiple lines of input. It can be marked as readonly="true" -->
+          Your History :<br>
+          <textarea name="history" rows="20" cols="50" >Just some random words
+          </textarea><br>
+          
+          <!-- You can visually surround like data with fieldset -->
+          <fieldset>
+          
+            <!-- Set the group name with legend -->
+            <legend>Hobbies</legend>
+            
+            <!-- Create a checkbox -->
+            Programming<input type="checkbox" name="cbprogramming" value="Programming">
+            Running<input type="checkbox" name="cbrunning" value="Running">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Top Skill</legend>
+            
+            <!-- Create a radio button to allow only 1 option -->
+            Programming<input type="radio" name="skill" value="Programming" checked>
+            Running<input type="radio" name="skill" value="Running">
+          </fieldset>
+          
+          <!-- Put all the options between select. You could show all options with  size="3" and selected can define the default value-->
+          Favorite Number : 
+          <select name="favNum">
+          
+            <option value="PI">Pi (3.14…)</option>
+            <option value="EulersNum">Euler’s Number (2.718…)</option>
+            <option value="GoldenRatio" selected>Golden Ratio</option>
+          
+          </select><br>
+          
+          <!-- You can group options in a select with optgroup -->
+          Favorite Hero : 
+          <select name="favHero">
+              <optgroup label="Marvel">
+                <option value="spiderman">Spiderman</option>
+                <option value="wolverine">Wolverine</option>
+              </optgroup>
+              <optgroup label="DC">
+                <option value="flash">Flash</option>
+                <option value="batman">Batman</option>
+              </optgroup>
+          </select><br>
+          
+          <!-- You can submit hidden data such as ip address, browser, etc with hidden -->
+          <input type="hidden" name="browser" id="browser"><br>
+          
+          <!-- You can upload files as well, but you must use the POST method -->
+          <input type="file" name="Upload">
+          
+          <!-- You could use an image for submit and then catch the event with JavaScript -->
+          <input type="image" alt="Logo" style="height:1rem;" src="../img/logo.png">
+          
+          <!-- Reset deletes all entered data -->
+          <input type="reset" value="Reset">
+          
+          <!-- When submit is clicked the data is passed to be processed on the server -->
+          <input type="submit" name="submit" value="Submit">
+        
+        </form>
+    </section>
+
+    <section class="svg_section" id="svg_section">
+      <div>
+
+        <!-- You can paint shapes and text on a canvas using JavaScript -->
+        <canvas id="canvas" class="canvas">
+        </canvas>
+      
+      </div>
+    </section>
+    
+    <section class="data_section" id="data_section">
+      <div>
+
+        <h2 style="font-size:2rem; color:#5643fa;" id="notify"> Finding the geolocation of this device.</h2>
+        
+        <h3 class="heading-tertiary"> Type the name you want to store: </h3>
+        <input type="text" id="yourName" size="50"><br>
+        <button onClick="setName()">Store</button>
+        <button onClick="getName()">Get</button>
+        <button onClick="removeName()">Remove</button>
+      
+      </div>
+    </section>
+    <footer class="html5_footer">
+      <div class="html5_footer_logo-box">
+        <picture class="html5_footer_logo">
+            <source srcset="../img/logo.png 1x, ../img/logo-2x.png 2x" media="(max-width: 37.5em)">
+            <img srcset="../img/logo.png 1x, img/logo-2x.png 2x" alt="Full logo" src="../img/logo.png">
+        </picture>
+      </div>
+    </footer>
+
+  </body>
+</html>
