@@ -420,25 +420,6 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-/*.row-cards {
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    height: 65rem;
-    padding:3rem;
-    margin: 0 10rem;
-    
-    & .col-1-of-3{
-        grid-column-start: 1;
-        
-    }
-    & .col-2-of-3{
-        grid-column-start: 2;
-    }
-    & .col-3-of-3{
-        grid-column-start: 3;
-    }
-}
-*/
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -657,6 +638,141 @@ body {
   hyphens: auto;
 }
 
+.html5_demo_main {
+  background-image: linear-gradient(to right bottom, rgba(241, 229, 50, 0.603), rgba(223, 113, 23, 0.603)), url("../img/yoga1.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.section-html5-main {
+  background-color: #f7f7f7;
+  opacity: 0.5;
+  padding: 1rem 0;
+}
+@media (max-width: 56.25em) {
+  .section-html5-main {
+    padding: 20rem 0;
+  }
+}
+
+.nav_menu {
+  background-color: #333;
+  opacity: 0.8;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #f7f7f7;
+}
+@media (max-width: 56.25em) {
+  .nav_menu {
+    padding: 1.5rem;
+  }
+}
+.nav_menu_item {
+  display: inline-block;
+}
+.nav_menu_item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.nav_menu_link:link, .nav_menu_link:visited {
+  color: #f7f7f7;
+  background-color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.nav_menu_link:hover, .nav_menu_link:active {
+  color: #df7117;
+  transform: scale(1.5);
+}
+
+.main {
+  margin-bottom: 2rem;
+}
+
+.demo1 {
+  display: none;
+}
+
+.table {
+  display: none;
+}
+
+.form {
+  display: none;
+}
+
+.data_section {
+  display: none;
+}
+
+.html5_footer {
+  position: fixed;
+  bottom: 0;
+  width: 96%;
+  background-color: #333;
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: #f7f7f7;
+}
+@media (max-width: 56.25em) {
+  .html5_footer {
+    padding: 1rem;
+  }
+}
+.html5_footer_logo-box {
+  text-align: center;
+}
+.html5_footer_logo {
+  width: 15rem;
+  height: auto;
+}
+
+#tableData {
+  width: 100%;
+  border: 3px solid black;
+  font-size: 2rem;
+}
+
+#tableData td, th {
+  border: 1px solid black;
+}
+
+#tableData colgroup.BBPName {
+  background: #C9FFE5;
+}
+
+/* There are 4 types of list bullets */
+#uoListTypes {
+  padding-inline-start: 4rem;
+  list-style-type: circle;
+  /* list-style-type:disc; */
+  /* list-style-type:square; */
+  /*list-style-image: url(favicon.ico);*/
+}
+
+/* Ordered list types have many options
+decimal, decimal-leading-zero, lower-roman, upper-roman, lower-latin, upper-latin, lower-alpha, upper-alpha, lower-greek, armenian, georgian */
+#oListTypes {
+  padding-inline-start: 2rem;
+  list-style-type: upper-roman;
+}
+
+#oListIndent {
+  padding-inline-start: 2rem;
+  list-style-type: lower-roman;
+}
+
+.canvas {
+  display: block;
+  width: 141rem;
+  height: 67rem;
+  padding: 4rem;
+}
+
 .header {
   height: 97vh;
   background-image: linear-gradient(to right bottom, rgba(241, 229, 50, 0.603), rgba(223, 113, 23, 0.603)), url("../img/background.jpg");
@@ -745,6 +861,9 @@ body {
 }
 .row .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
+.row .col-1-of-5 {
+  width: calc((100% - 4 * 6rem) / 5);
 }
 
 .navigation__checkbox {
