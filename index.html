@@ -9,6 +9,11 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css"></link>
     <link href='img/favicon.png' rel='shortcut icon' type='image/png'>
     <title> Anju - Exploring Advanced CSS features</title>
+    <script>
+    function hide_nav(){
+       document.getElementById("navi_toggle").checked = false;
+      }
+      </script>
 </head>
   <body>
 
@@ -20,26 +25,26 @@
       <label for="navi_toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
-      <div class="navigation__nav">
+      <div class="navigation__nav" id="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About Me</a>
+            <a href="#section-cards" onclick="hide_nav()" class="navigation__link">About Me</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Vitalities</a>
+            <a href="#section-features" onclick="hide_nav()" class="navigation__link">Vitalities</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Personal Qualitites</a>
+            <a href="#section-about" onclick="hide_nav()" class="navigation__link">My Passion</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">My Passion</a>
+            <a href="https://anjusindhu.github.io/react_demo/" onclick="hide_nav()" class="navigation__link">Work in React</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Work Done</a>
+              <a href="https://anjusindhu.github.io/angular_demo/" onclick="hide_nav()" class="navigation__link">Work in Angular</a>
           </li>
-          <li class="navigation__item">
-              <a href="#" class="navigation__link">Contact Me</a>
-            </li>
+           <li class="navigation__item">
+                <a href="advancedHtml5/html5_demo.html" onclick="hide_nav()" class="navigation__link">Work in HTML5</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -279,8 +284,8 @@
           <p class="popup_text u-margin-bottom-medium">Illustrates the use of new tags like: audio, video, section, header, footer, aside, pre, nav,  object tag for embedding external files, grid and box model and constraining use of div and span only for styling and not for structuring.</p>
           <p class="popup_text u-margin-bottom-medium">There are more examples of creating tables, form submission etc.</p>
           <a href="advancedHtml5/html5_demo.html" class="btn btn-brown">Check HTML5 Demos</a>
-          <a href="advancedHtml5/html5_demo.html" class="btn btn-brown">Check Angular Demos</a>
-          <a href="advancedHtml5/html5_demo.html" class="btn btn-brown">Check Java Demos</a>
+          <a href="https://anjusindhu.github.io/angular_demo/" class="btn btn-brown">Check Angular Demos</a>
+          <a href="https://anjusindhu.github.io/react_demo/" class="btn btn-brown">Check React Demos</a>
         </div>
       </div>
     </div>
